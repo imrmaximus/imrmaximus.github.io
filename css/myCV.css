@@ -1,0 +1,63 @@
+* {
+    font-family: arial;
+}
+
+h3 {
+    text-decoration:underline;
+}
+
+#name, #phone, #email {
+    font-weight: bold;
+}
+
+#various {
+    margin-top: 20px;
+}
+
+#titleCV {
+    text-align: center;
+}
+
+#professional-history {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#technicals .details .row .type {
+	text-align: right;
+	font-weight: bold;
+}
+
+#technicals .details .row .contenu {
+	text-align: left;
+}
+
+.row .type {
+	text-align: right;
+	font-weight: bold;
+}
+
+.row .contenu {
+	text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+ul {
+    padding-left: 15px;
+}
+
+body {
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.round {
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    background-color: #EEEEEE;
+    border: 1px solid #CDCDCD;
+}

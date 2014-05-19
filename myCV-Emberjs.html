@@ -1,0 +1,161 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap-3.1.1-dist/css/bootstrap.min.css">
+    <link href="css/myCV.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="starter-kit-1.5.1/js/libs/jquery-1.10.2.js"></script>
+    <script src="starter-kit-1.5.1/js/libs/handlebars-1.1.2.js"></script>
+    <script src="starter-kit-1.5.1/js/libs/ember.min.js"></script>
+    <script src="starter-kit-1.5.1/js/libs/ember-data.min.js"></script>
+  </head>
+  <body>
+    <div class="row">
+      <div id="infos" class="col-sm-offset-1 col-sm-4">
+        <div id="name">
+          Maxime AVON
+        </div>
+        <div id="coordinates">
+          Appt 313<br/>
+          6 Allée des Humanistes<br/>
+          59650 Villeneuve d'Ascq
+        </div>
+        <div id="contacts">
+          06 88 41 50 92<br/>
+          maxime.avon@icloud.com<br/>
+          maxime.avon@gmail.com
+        </div>
+        <div id="various">
+          Permis B<br/>
+          <br/>
+          Né le 28 Avril 1984<br/>
+          Nationalité Française
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div id="titleCV" class="col-sm-offset-2 col-sm-8">
+        Analyste développeur
+        Ruby-on-Rails et iOS
+      </div>
+    </div>
+    <div class="row">
+      <div id="technicales" class="col-sm-offset-1 col-sm-10">
+        COMPETENCES TECHNIQUES
+        Systèmes d’exploitation :	Windows XP, Windows 7, Unix, Mac OS X
+        Langage :	Ruby-on-Rails, Objective-C, Java/J2EE, Shell, XSL, Javascript, SQL/PLSQL
+        Bases de données :	DB2, PostgreSQL, Oracle
+        Outils :	Websphere Commerce, Eclipse, XCode, Fredhopper
+        Bureautique :	Office
+      </div>
+    </div>
+    <div class="row">
+      <div id="professional-history" class="col-sm-offset-1 col-sm-10">
+        EXPERIENCES PROFESSIONNELLES
+
+        <br/>
+        <br/>
+        <script type="text/x-handlebars" data-template-name="cv">
+
+          <section id="todoapp">
+            <ul id="story-list">
+              {{#each}}
+              <li>
+                <div class="row">
+                  <div class="title col-sm-2">
+                    De {{startDate}} au {{endDate}}
+                  </div>
+                  <div class="title col-sm-8">
+                    {{role}} chez {{society}}
+                  </div>
+                </div>
+              </li>
+              {{/each}}
+            </ul>
+          </section>
+
+          <footer id="info">
+            <p>Double-click to edit a todo</p>
+          </footer>
+
+        </script>
+        <br/>
+        <br/>
+        Du 14 Février 2014 au 14 Mai 2014 – Myeggbox
+        	Poste : Analyste-développeur Ruby-on-Rails
+        Mise à niveau de l’application sur Git
+        Mise en place des processus de déploiements via Gitflow
+        Ajout d’un tunnel de commande d’achat direct de carnet via la gem “Wicked”
+        Travail apporté sur les dictionnaires de langues
+        Amélioration de la page d’accueil :
+        Apport d’effets style parallax grâce à la librairie javascript ScrollMagic
+        Affichage de photo en mode pinterest par la librairie javascript Grid-A-Licious
+        Détection du type du navigateur, côté serveur, pour optimiser l’affichage de cette page en mode mobile ou en mode bureau, grâceà la gem “mobu”
+        Diverses correctifs et optimisations…
+
+
+
+
+        De Janvier 2008 à Mars 2013 – Pictime Groupe
+        Poste : Analyste-développeur sur des sites e-Commerce
+        Maintenance corrective et évolutive de différents clients avec :
+        Dont mise en place de fichiers Excel permettant le suivi du CA des clients
+        Et optimisation de script Shell pour la suppression d'images inutilisées 
+        Maintenance corrective et évolutive du site Conrad.fr dont :
+        Dont optimisation des scripts Shell et XSL des intégrations des flux
+        Et utilisation de l'outil de Fredhopper pour la navigation et la recherche
+        Mise en place de la newsletter sur Boulanger.fr via Inxmail :
+        Dont génération de code barre (via logiciel) envoyé par email
+        Maintenance du site Boulanger.fr 
+        Mise à jour du site Boulanger.fr :
+        Refonte du moteur de recherche
+        Création d'un module de recherche de consommables à partir de caractéristiques d'un produit 
+        Technologies utilisées : Websphere Commerce, Java/J2EE, Shell, XSL, DB2, Oracle, PostgreSQL, Fredhopper
+
+
+        Novembre à Décembre 2007 – Cylande
+        	Poste : Analyste programmeur
+        Apport de correctifs et de petites évolutions à l’application StoreLand
+        Technologies utilisées : Delphi
+
+        Mars à Juin 2007 - l'équipe ALCOVE/GraphiX à l'IRCICA
+        	Poste : Stagiaire
+        Intégration d'un gestionnaire d'application 2D dans un environnement collaboratif 3D.
+        Technologies utilisées : C++
+
+        Septembre 2006 - CERIM, CHRU de Lille
+        	Poste : Stagiaire
+        Mise en place d'une interface web de collecte de données pour la médecine du travail.
+        Technologies utilisées : PHP/PostgreSQL
+
+        Juillet à Décembre 2005 - Groupe AFG
+        	Poste : Stagiaire
+        Mise à jour de l'extranet collaborateur.
+        Technologies utilisées :   PHP/MySQL
+      </div>
+    </div>
+    <div id="training">
+      DIPLOMES et FORMATIONS
+      Sept. 2013	"Formations chez la société lilloise Kaligram :
+      Formation Objective-C (1 jour)
+      Formation Développement iOS (4 jours)"
+      2007	Maîtrise GMI (Institut Universitaire Professionnalisé, Génie Mathématique et Informatique)
+      2002	Bac S - Science de l'Ingénieur spécialité Mathématiques au LICP (Lycée Industriel et Commercial Privé) de Tourcoing
+    </div>
+    <div id="langages">
+      LANGUES
+      Anglais :	Technique
+      Espagnol :	Scolaire
+    </div>
+    <div id="interest">
+      CENTRES D'INTERET
+
+      Culture cinématographique
+      Musculation/Fitness (Pratique en salle, 2-3 heures par semaine)
+      Scout de France (Pratiqué de 1995 à 2002)
+    </div>
+    <script src="js/application.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/models/story.js"></script>
+    <!--script src="js/models/todo.js"></script-->
+  </body>
+</html>

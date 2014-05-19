@@ -1,0 +1,172 @@
+{
+	"contacts" : {
+		"firstname" : "Maxime",
+		"lastname" : "AVON",
+		"address_line" : ["Appt. 313", "6 Allée des Humanistes"],
+		"zipcode" : "59650",
+		"city" : "Villeneuve d'Ascq",
+		"country" : "France",
+		"phone" : "06 88 41 50 92",
+		"email" : ["maxime_avon@icloud.com", "maxime.avon@gmail.com"],
+		"gravatar" : "maxime.avon@gmail.com",
+		"various" : ["Permis B"],
+    	"birth" : {
+    		"date" : "1984-04-28T00:00:00.000Z",
+    		"location" : "Croix",
+    		"nationality" : "Français"
+    	}
+	},
+	"title" : "Analyste-développeur Ruby-on-Rails et iOS",
+	"technicals" : [
+		{ "type" : "OS",        "details" : "Mac OS X, Windows XP, Windows 7, Unix" },
+		{ "type" : "Langages",   "details" : "Ruby-on-Rails, Objective-C, HTML/CSS, jQuery, SQL/PLSQL, Shell, XSL, Java/J2EE" },
+		{ "type" : "BDD",       "details" : "DB2, PostgreSQL, Oracle" },
+		{ "type" : "Outils",     "details" : "XCode, RubyMine, Eclipse, Websphere Commerce" },
+		{ "type" : "Bureautique",    "details" : "Office" }
+	],
+	"professionnal_stories" : [
+		{
+			"society" : "Myeggbox",
+			"role" : [
+				{
+					"startDate" : "2014/02/14",
+					"endDate" : "2014/05/14",
+					"role" : "<strong>Analyste-développeur Ruby-on-Rails</strong>",
+					"missions" : [
+						"Mise à niveau de l’application sur Git",
+						"Mise en place des processus de déploiements",
+						"Ajout d’un tunnel de commande d’achat direct de carnet",
+						"Travail apporté sur les dictionnaires de langues",
+						{
+							"title" : "Amélioration de la page d’accueil :",
+							"submissions" : [
+									"Ajout d’effets style <strong>parallax</strong>",
+									"Affichage de photo dans le style de <strong>pinterest.com</strong>",
+									"Détection du type du navigateur, côté serveur, pour optimiser l’affichage de cette page en mode mobile ou en mode bureau"
+								]
+						},
+						"Diverses correctifs et optimisations..."
+					],
+					"technologies" : "Ruby-on-Rails, Gitflow, différentes gem dont 'Wicked' et 'mobu', ScrollMagic, Grid-A-Licious"
+				}
+			]
+		},
+		{
+			"society" : "Pictime Group",
+			"role" : [
+				{
+					"startDate" : "2008/01/02",
+					"endDate" : "2013/03/03",
+					"role" : "Analyste-développeur Java/J2EE sur des sites e-Commerce",
+					"missions" : [
+						{
+							"title" : "Maintenance corrective et évolutive de différents clients avec :",
+							"submissions" : [
+									"Dont mise en place de fichiers Excel permettant le suivi du CA des clients",
+									"Et optimisation de script Shell pour la suppression d'images inutilisées"
+								]
+						},
+						{
+							"title" : "Maintenance corrective et évolutive du site Conrad.fr dont :",
+							"submissions" : [
+									"Dont <strong>optimisation des scripts Shell et XSL</strong> des intégrations des flux",
+									"Et <strong>utilisation de l'outil de Fredhopper</strong> pour la navigation et la recherche"
+								]
+						},
+						{
+							"title" : "Mise en place de la newsletter sur Boulanger.fr via Inxmail :",
+							"submissions" : [
+									"Dont <strong>génération de code barre</strong> (via logiciel) envoyé par email"
+								]
+						},
+						"Maintenance du site Boulanger.fr",
+						{
+							"title" : "Mise à jour du site Boulanger.fr :",
+							"submissions" : [
+									"Refonte du moteur de recherche",
+									"Création d'un module de recherche de consommables à partir de caractéristiques d'un produit"
+								]
+						}
+					],
+					"technologies" : "Websphere Commerce, Java/J2EE, Shell, XSL, DB2, Oracle, PostgreSQL, Fredhopper"
+				}
+			]
+		},
+		{
+			"society" : "Cylande",
+			"role" : [
+				{
+					"startDate" : "2007/11/15",
+					"endDate" : "2007/12/15",
+					"role" : "Analyste-programmeur",
+					"missions" : ["Apport de correctifs et de petites évolutions à l’application StoreLand"],
+					"technologies" : "Delphi"
+				}
+			]
+		},
+		{
+			"society" : "l'équipe ALCOVE/GraphiX à l'IRCICA",
+			"role" : [
+				{
+					"startDate" : "2007/03/01",
+					"endDate" : "2007/06/30",
+					"role" : "Stagiaire",
+					"missions" : ["Intégration d'un gestionnaire d'application 2D dans un environnement collaboratif 3D."],
+					"technologies" : "C++, Visual Studio"
+				}
+			]
+		},
+		{
+			"society" : "CERIM, CHRU de Lille",
+			"role" : [
+				{
+					"startDate" : "2006/09/30",
+					"endDate" : "2006/09/01",
+					"role" : "Stagiaire",
+					"missions" : ["Mise en place d'une interface web de collecte de données pour la médecine du travail."],
+					"technologies" : "PHP/PostgreSQL"
+				}
+			]
+		},
+		{
+			"society" : "Groupe AFG",
+			"role" : [
+				{
+					"startDate" : "2005/07/01",
+					"endDate" : "2005/12/31",
+					"role" : "Stagiaire",
+					"missions" : ["Mise à jour de l'extranet collaborateur."],
+					"technologies" : "PHP, MySQL"
+				}
+			]
+		}
+	],
+	"training" : [
+		{
+			"dateInString" : "Sept. 2013",
+			"location" : "Société <strong>Kaligram</strong>, Lille",
+			"contents" : [ "Formation <strong>Objective-C</strong> (1 jour)", "Formation <strong>Développement iOS</strong> (4 jours)"]
+		},
+		{
+			"dateInString" : "2007",
+			"location" : "Lille1",
+			"contents" : "<strong>Maîtrise GMI</strong> (Génie Mathématique et Informatique"
+		},
+		{
+			"dateInString" : "2002",
+			"location" : "<strong>LICP</strong> (Lycée Industriel et Commercial Privé), Tourcoing",
+			"contents" : "<strong>Bac S SI</strong> (Science de l'Ingénieur), spécialité Mathématique"
+		}
+	],
+	"languages" : [
+		{
+			"language" : "<strong>Anglais</strong>",
+			"level" : "Technique"
+		},
+		{
+			"language" : "<strong>Espagnol</strong>",
+			"level" : "Scolaire"
+		}
+	],
+	"interests" : [ "Culture cinématographique", "Musculation/Fitness (Pratique en salle, 2-3 heures par semaine)", "Scout de France (Pratiqué de 1995 à 2002)" ]
+}
