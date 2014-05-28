@@ -1,37 +1,12 @@
 {
-    "contacts" : {
-		"firstname" : "Maxime",
-		"lastname" : "AVON",
-		"address_line" : ["Appt. 313", "6 Allée des Humanistes"],
-		"zipcode" : "59650",
-		"city" : "Villeneuve d'Ascq",
-		"country" : "France",
-		"phone" : "06 88 41 50 92",
-		"email" : ["maxime_avon@icloud.com", "maxime.avon@gmail.com"],
-		"gravatar" : "maxime.avon@gmail.com",
-		"various" : ["Permis B"],
-    	"birth" : {
-    		"date" : "1984-04-28T00:00:00.000Z",
-    		"location" : "Croix",
-    		"nationality" : "Français"
-    	}
-	},
-	"title" : "Analyste-développeur Ruby-on-Rails et iOS",
-	"technicals" : [
-		{ "type" : "OS",        "details" : "Mac OS X, Windows XP, Windows 7, Unix" },
-		{ "type" : "Langages",   "details" : "Ruby-on-Rails, Objective-C, HTML/CSS, jQuery, SQL/PLSQL, Shell, XSL, Java/J2EE" },
-		{ "type" : "BDD",       "details" : "DB2, PostgreSQL, Oracle" },
-		{ "type" : "Outils",     "details" : "XCode, RubyMine, Eclipse, Websphere Commerce" },
-		{ "type" : "Bureautique",    "details" : "Office" }
-	],
-	"professionnal_stories" : [
+	"professionnal_history" : [
 		{
 			"society" : "Myeggbox",
 			"role" : [
 				{
 					"startDate" : "2014/02/14",
 					"endDate" : "2014/05/14",
-					"role" : "<strong>Analyste-développeur Ruby-on-Rails</strong>",
+					"role" : "Analyste-développeur Ruby-on-Rails",
 					"missions" : [
 						"Mise à niveau de l’application sur Git",
 						"Mise en place des processus de déploiements",
@@ -140,33 +115,5 @@
 				}
 			]
 		}
-	],
-	"training" : [
-		{
-			"dateInString" : "Sept. 2013",
-			"location" : "Société <strong>Kaligram</strong>, Lille",
-			"contents" : [ "Formation <strong>Objective-C</strong> (1 jour)", "Formation <strong>Développement iOS</strong> (4 jours)"]
-		},
-		{
-			"dateInString" : "2007",
-			"location" : "Lille1",
-			"contents" : "<strong>Maîtrise GMI</strong> (Génie Mathématique et Informatique"
-		},
-		{
-			"dateInString" : "2002",
-			"location" : "<strong>LICP</strong> (Lycée Industriel et Commercial Privé), Tourcoing",
-			"contents" : "<strong>Bac S SI</strong> (Science de l'Ingénieur), spécialité Mathématique"
-		}
-	],
-	"languages" : [
-		{
-			"language" : "<strong>Anglais</strong>",
-			"level" : "Technique"
-		},
-		{
-			"language" : "<strong>Espagnol</strong>",
-			"level" : "Scolaire"
-		}
-	],
-	"interests" : [ "Culture cinématographique", "Musculation/Fitness (Pratique en salle, 2-3 heures par semaine)", "Scout de France (Pratiqué de 1995 à 2002)" ]
+	]
 }

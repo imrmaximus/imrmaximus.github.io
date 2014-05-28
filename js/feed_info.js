@@ -51,13 +51,12 @@ function feed_contacts(contacts) {
     });
     
     var birthDate = new Date(contacts.birth.date);
-    console.log(birthDate.toJSON());
     $("#contacts #birth").text("Né le " + birthDate.toLocaleDateString());
     $("#contacts #birth").append("<br/>Nationalité : " + contacts.birth.nationality);
     
     var prepareEmailGravatar = $.trim(contacts.gravatar.toLowerCase());
     var gravatar = $.md5(prepareEmailGravatar);
-    $(".photo").html("<img src='http://www.gravatar.com/avatar/"+gravatar+".jpg?s=200' class='round center-block'/>");
+    $(".photo").html("<img src='http://www.gravatar.com/avatar/"+gravatar+".jpg?s=225' class='round center-block'/>");
 }
 
 function feed_technicals(technicals) {
@@ -79,12 +78,10 @@ function feed_technicals_category(oneTechnic) {
     newLine += "</div>";
     
     $("#technicals .details").append(newLine);
-	console.log(oneTechnic.type);
 }
 
 function feed_professionnal_history(stories) {
     if ($.isArray(stories)) {
-        console.log('stories');
         feed_professionnal_story(stories[0]);
         $.each(stories.slice(1), function(index, value) {
             $("#professional-history .details").append("<hr/>");

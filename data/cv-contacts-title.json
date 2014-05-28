@@ -1,0 +1,20 @@
+{
+    "contacts" : {
+        "firstname" : "Maxime",
+        "lastname" : "AVON",
+        "address_line" : ["Appt. 313", "6 Allée des Humanistes"],
+        "zipcode" : "59650",
+        "city" : "Villeneuve d'Ascq",
+        "country" : "France",
+        "phone" : "06 88 41 50 92",
+        "email" : ["maxime_avon@icloud.com", "maxime.avon@gmail.com"],
+        "gravatar" : "maxime.avon@gmail.com",
+        "various" : ["Permis B"],
+        "birth" : {
+            "date" : "1984-04-28T00:00:00.000Z",
+            "location" : "Croix",
+            "nationality" : "Français"
+        }
+    },
+	"title" : "Analyste-développeur Ruby-on-Rails et iOS"
+}

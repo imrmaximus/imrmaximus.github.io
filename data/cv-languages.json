@@ -1,0 +1,12 @@
+{
+	"languages" : [
+		{
+			"language" : "<strong>Anglais</strong>",
+			"level" : "Technique"
+		},
+		{
+			"language" : "<strong>Espagnol</strong>",
+			"level" : "Scolaire"
+		}
+	]
+}

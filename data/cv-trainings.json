@@ -1,0 +1,19 @@
+{
+	"training" : [
+		{
+			"dateInString" : "Sept. 2013",
+			"location" : "Société <strong>Kaligram</strong>, Lille",
+			"contents" : [ "Formation <strong>Objective-C</strong> (1 jour)", "Formation <strong>Développement iOS</strong> (4 jours)"]
+		},
+		{
+			"dateInString" : "2007",
+			"location" : "Lille1",
+			"contents" : "<strong>Maîtrise GMI</strong> (Génie Mathématique et Informatique"
+		},
+		{
+			"dateInString" : "2002",
+			"location" : "<strong>LICP</strong> (Lycée Industriel et Commercial Privé), Tourcoing",
+			"contents" : "<strong>Bac S SI</strong> (Science de l'Ingénieur), spécialité Mathématique"
+		}
+	]
+}

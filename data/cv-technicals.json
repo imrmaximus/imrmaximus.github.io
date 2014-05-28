@@ -1,0 +1,9 @@
+{
+    "technicals" : [
+        { "type" : "OS",        "details" : "Mac OS X, Windows XP, Windows 7, Unix" },
+        { "type" : "Langages",   "details" : "Ruby-on-Rails, Objective-C, HTML/CSS, jQuery, SQL/PLSQL, Shell, XSL, Java/J2EE" },
+        { "type" : "BDD",       "details" : "DB2, PostgreSQL, Oracle" },
+        { "type" : "Outils",     "details" : "XCode, RubyMine, Eclipse, Websphere Commerce" },
+        { "type" : "Bureautique",    "details" : "Office" }
+    ]
+}

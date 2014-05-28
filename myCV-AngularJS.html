@@ -1,0 +1,178 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="css/bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/myCV.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="css/myCV-AngularJS.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="css/myCV-print.css" media="print" rel="stylesheet" type="text/css" />
+        <script src="js/starter-kit-1.5.1/js/libs/jquery-1.10.2.js"></script>
+        <script src="js/jquery.md5.js"></script>
+        <script src="js/angularjs/angular.min.1.2.16.js"></script>
+        <script src="js/application-AngularJS.js"></script>
+    </head>
+    <body class="col-lg-offset-1 col-lg-10" ng-app="myCv">
+        <div class="row">
+            <div class="col-xs-12 photo visible-xs hidden-print">
+            </div>
+            <div id="contacts" class="col-sm-offset-1 col-xs-5" ng-controller="ContactCtrl">
+                <div id="name">{{contact.lastname}} {{contact.firstname}}</div>
+                <div id="address_line" ng-repeat="address_line in contact.address_line">{{address_line}}</div>
+                <div id="zipcode_city">{{contact.zipcode}} {{contact.city}}</div>
+                <div id="phone">{{contact.phone}}</div>
+                <div id="email" ng-repeat="email in contact.email">{{email}}</div>
+                <div id="various" ng-repeat="element in contact.various">{{element}}</div>
+                <div id="birth" ng-repeat="birth_element in birth">{{birth_element}}</div>
+            </div>
+
+            <div class="col-sm-offset-2 col-xs-3 right photo hidden-xs hidden-print">
+            </div>
+        </div>
+        <div class="row" ng-controller="ContactCtrl">
+            <h1 id="titleCV" class="col-sm-offset-3 col-sm-6">{{title}}</h1>
+        </div>
+        <div class="row">
+            <div id="technicals" class="col-sm-offset-1 col-sm-10" ng-controller="TechnicalsCtrl">
+                <div class="row">
+                    <h3 class="title col-sm-10">COMPETENCES TECHNIQUES</h3>
+                </div>
+                <div class="details" ng-repeat="oneTechnic in technicals">
+                    <div class='row'>
+                        <div class='col-xs-4 type'>{{oneTechnic.type}} :</div>
+                        <div class='col-xs-8 contenu'>{{oneTechnic.details}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="professional-history" class="col-sm-offset-1 col-sm-10" ng-controller="ProfessionnalHistoryCtrl">
+                <div class="row">
+                    <h3 class="title col-sm-10">EXPERIENCES PROFESSIONNELLES</h3>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 details" ng-repeat="society_story in professionnal_history">
+                        <div class='row'>
+                            <div class='row hidden-print'>
+                                <div class='col-sm-3 right hidden-xs'>
+                                    <strong>Du {{society_story.start_date}}<br/>au {{society_story.end_date}}</strong>
+                                </div>
+                                <div class='col-xs-offset-1 col-sm-3 visible-xs'>
+                                    <strong>Du {{society_story.start_date}} au {{society_story.end_date}}</strong>
+                                </div>
+                                <div class='col-xs-1 right hidden-xs'>Société</div>
+                                <div class='col-xs-offset-1 col-xs-3 right visible-xs'>Société</div>
+                                <div class='col-xs-6 hidden-xs'><strong>{{society_story.society}}</strong></div>
+                                <div class='col-xs-6 visible-xs'><strong>{{society_story.society}}</strong></div>
+                            </div>
+                            <div class='row visible-print'>
+                                <div class='col-xs-offset-1 col-md-12'>
+                                    <strong>Du {{society_story.start_date}} au {{society_story.end_date}} - {{society_story.society}}</strong>
+                                </div>
+                            </div>
+                            <div ng-repeat="a_role in society_story.role">
+                                <div class='row' ng-if="society_story.role.length > 1">
+                                    <div class='col-xs-offset-3 col-xs-1 right'>Période</div>
+                                    <div class='col-xs-7'>
+                                        <strong>Du {{a_role.startDate}} au {{a_role.endDate}}</strong>
+                                    </div>
+                                </div>
+                                <div class='row'>
+                                    <div class='col-xs-offset-2 col-xs-2 right hidden-print hidden-xs'>Poste :</div>
+                                    <div class='col-xs-offset-1 col-xs-3 right hidden-print visible-xs'>Poste :</div>
+                                    <div class='col-xs-7 hidden-print'><strong>{{a_role.role}}</strong></div>
+                                    <div class='col-xs-2 right visible-print'>Poste :</div>
+                                    <div class='col-xs-10 visible-print'><strong>{{a_role.role}}</strong></div>
+                                </div>
+                                <div class='row'>
+                                    <div class='col-xs-offset-4 col-xs-8 contenu hidden-print'>
+                                        <ul>
+                                            <li ng-repeat="mission in a_role.missions">
+                                                <p ng-if="!mission.title" ng-bind-html="deliberatelyTrustDangerousSnippet(mission)"/>
+                                                <p ng-if="mission.title" ng-bind-html="deliberatelyTrustDangerousSnippet(mission.title)"/>
+                                                <ul ng-if="mission.title">
+                                                    <li ng-repeat="submission in mission.submissions">
+                                                        <p ng-bind-html="deliberatelyTrustDangerousSnippet(submission)"/>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class='col-xs-offset-3 col-xs-11 contenu visible-print'>
+                                        <ul>
+                                            <li ng-repeat="mission in a_role.missions">
+                                                <p ng-if="!mission.title" ng-bind-html="deliberatelyTrustDangerousSnippet(mission)"/>
+                                                <p ng-if="mission.title" ng-bind-html="deliberatelyTrustDangerousSnippet(mission.title)"/>
+                                                <ul ng-if="mission.title">
+                                                    <li ng-repeat="submission in mission.submissions">
+                                                        <p ng-bind-html="deliberatelyTrustDangerousSnippet(submission)"/>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class='row'>
+                                    <div class='col-xs-offset-2 col-xs-2 right hidden-print hidden-xs'>Techno :</div>
+                                    <div class='col-xs-offset-1 col-xs-3 right hidden-print visible-xs'>Techno :</div>
+                                    <div class='col-xs-7 hidden-print'><strong>{{a_role.technologies}}</strong></div>
+                                    <div class='col-xs-2 right visible-print'>Techno :</div>
+                                    <div class='col-xs-10 visible-print'><strong>{{a_role.technologies}}</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="training" class="col-sm-offset-1 col-sm-10" ng-controller="TrainingsCtrl">
+                <div class="row">
+                    <h3 class="title col-sm-10">DIPLOMES et FORMATIONS</h3>
+                </div>
+                <div class="row details">
+                    <div class='row' ng-repeat="training in trainings">
+                        <div class='col-xs-offset-1 col-xs-3 right'>{{training.dateInString}}</div>
+                        <div class='col-xs-8'>
+                            <p ng-if="!training.contentIsArray" ng-bind-html="deliberatelyTrustDangerousSnippet(basic_info(training.contents, training.location))"></p>
+                            <p ng-if="training.contentIsArray" ng-bind-html="deliberatelyTrustDangerousSnippet(training.location)"></p>
+                            <ul ng-if="training.contentIsArray">
+                                <li ng-repeat="content in training.contents" ng-bind-html="deliberatelyTrustDangerousSnippet(content)"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="langages" class="col-sm-offset-1 col-sm-10" ng-controller="LanguagesCtrl">
+                <div class="row">
+                    <h3 class="title col-sm-10">LANGUES</h3>
+                </div>
+                <div class="row details">
+                    <div class='row' ng-repeat="language in languages">
+                        <div class='col-xs-offset-1 col-xs-4 right visible-xs' ng-bind-html="deliberatelyTrustDangerousSnippet(language.language)"></div>
+                        <div class='col-xs-offset-1 col-xs-3 right hidden-xs' ng-bind-html="deliberatelyTrustDangerousSnippet(language.language)"></div>
+                        <div class='col-xs-7'>{{language.level}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="interests" class="col-sm-offset-1 col-sm-10" ng-controller="InterestsCtrl">
+                <div class="row">
+                    <h3 class="title col-sm-10">CENTRES D'INTERET</h3>
+                </div>
+                <div class="row details">
+                    <div class='row' ng-repeat="interest in interests">
+                        <div class='col-xs-offset-1 col-xs-12 left'>{{interest}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/angularjs/contacts.js"></script>
+        <script src="js/angularjs/technicals.js"></script>
+        <script src="js/angularjs/professionnals_history.js"></script>
+        <script src="js/angularjs/trainings.js"></script>
+        <script src="js/angularjs/languages.js"></script>
+        <script src="js/angularjs/interests.js"></script>
+    </body>
+</html>
