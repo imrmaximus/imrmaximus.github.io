@@ -19,7 +19,7 @@
                 <div id="address_line" ng-repeat="address_line in contact.address_line">{{address_line}}</div>
                 <div id="zipcode_city">{{contact.zipcode}} {{contact.city}}</div>
                 <div id="phone">{{contact.phone}}</div>
-                <div id="email" ng-repeat="email in contact.email">{{email}}</div>
+                <div id="email" ng-repeat="email in contact.email"><a href="mailto:{{email}}">{{email}}</a></div>
                 <div id="various" ng-repeat="element in contact.various">{{element}}</div>
                 <div id="birth" ng-repeat="birth_element in birth">{{birth_element}}</div>
             </div>
