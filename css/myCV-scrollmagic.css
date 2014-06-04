@@ -8,44 +8,35 @@
 
 #marker-debut {
     top: 1vh;
-    border: 1px solid #000;
 }
 
 #marker-contact-away {
     top: 60vh;
-    border: 1px solid #2b542c;
 }
 
 #marker-technicals {
-    top: 85vh;
-    border: 1px solid #710909;
+    top: 100vh;
 }
 
 #marker-history {
-    top: 140vh;
-    border: 1px solid #C6E746;
+    top: 200vh;
 }
 
 #marker-training {
-    top: 210vh;
-    border: 1px solid #0d3349;
+    top: 270vh;
 }
 
 #marker-show-various {
-    top: 270vh;
-    border: 1px solid #222222;
+    top: 350vh;
 }
 
 #marker-et-voila {
-    top: 350vh;
-    border: 1px solid #67b168;
+    top: 450vh;
 }
 
 /* The others */
 
-body {/*
-    width: 100%;
-    height: 100%;*/
+body {
     font-weight: 300;
     color: #FFFFFF;
 }
