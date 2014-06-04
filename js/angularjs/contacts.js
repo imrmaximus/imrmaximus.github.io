@@ -12,6 +12,6 @@ myCv.controller('ContactCtrl', ['$scope', '$http', function ContactCtrl($scope, 
 
         var prepareEmailGravatar = $.trim(data.contacts.gravatar.toLowerCase());
         var gravatar = $.md5(prepareEmailGravatar);
-        $(".photo").html("<img src='http://www.gravatar.com/avatar/"+gravatar+".jpg?s=225' class='round center-block'/>");
+        $(".photo").html("<img id='img-profil' src='http://www.gravatar.com/avatar/"+gravatar+".jpg?s=225' class='round center-block'/>");
     });
 }]);

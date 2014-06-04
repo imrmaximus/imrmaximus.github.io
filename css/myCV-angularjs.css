@@ -1,3 +1,8 @@
 p {
     margin: 0px;
 }
+
+#professional-history .details .title {
+    margin-left: 15px;
+    font-size: 17px;
+}

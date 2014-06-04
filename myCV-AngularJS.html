@@ -1,14 +1,15 @@
 <html>
     <head>
+        <title>Maxime AVON - CV</title>
         <meta charset="utf-8">
         <link href="css/bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="css/myCV.css" media="all" rel="stylesheet" type="text/css" />
         <link href="css/myCV-angularjs.css" media="all" rel="stylesheet" type="text/css" />
         <link href="css/myCV-print.css" media="print" rel="stylesheet" type="text/css" />
-        <script src="js/starter-kit-1.5.1/js/libs/jquery-1.10.2.js"></script>
-        <script src="js/jquery.md5.js"></script>
-        <script src="js/angularjs/angular.min.1.2.16.js"></script>
-        <script src="js/application-angularjs.js"></script>
+        <script type="text/javascript" src="js/starter-kit-1.5.1/js/libs/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="js/jquery.md5.js"></script>
+        <script type="text/javascript" src="js/angularjs/angular.min.1.2.16.js"></script>
+        <script type="text/javascript" src="js/application-angularjs.js"></script>
     </head>
     <body class="col-lg-offset-1 col-lg-10" ng-app="myCv">
         <div class="row">
@@ -50,6 +51,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12 details" ng-repeat="society_story in professionnal_history">
+                        <hr ng-if="$index > 0"/>
                         <div class='row'>
                             <div class='row hidden-print'>
                                 <div class='col-sm-3 right hidden-xs'>
@@ -64,7 +66,7 @@
                                 <div class='col-xs-6 visible-xs'><strong>{{society_story.society}}</strong></div>
                             </div>
                             <div class='row visible-print'>
-                                <div class='col-xs-offset-1 col-md-12'>
+                                <div class='col-md-12 title'>
                                     <strong>Du {{society_story.start_date}} au {{society_story.end_date}} - {{society_story.society}}</strong>
                                 </div>
                             </div>
@@ -168,11 +170,11 @@
                 </div>
             </div>
         </div>
-        <script src="js/angularjs/contacts.js"></script>
-        <script src="js/angularjs/technicals.js"></script>
-        <script src="js/angularjs/professionnals_history.js"></script>
-        <script src="js/angularjs/trainings.js"></script>
-        <script src="js/angularjs/languages.js"></script>
-        <script src="js/angularjs/interests.js"></script>
+        <script type="text/javascript" src="js/angularjs/contacts.js"></script>
+        <script type="text/javascript" src="js/angularjs/technicals.js"></script>
+        <script type="text/javascript" src="js/angularjs/professionnals_history.js"></script>
+        <script type="text/javascript" src="js/angularjs/trainings.js"></script>
+        <script type="text/javascript" src="js/angularjs/languages.js"></script>
+        <script type="text/javascript" src="js/angularjs/interests.js"></script>
     </body>
 </html>

@@ -1,23 +1,28 @@
 $(document).ready(function() {
-    $.getJSON("/data/cv.json", function(cv){ 
-        console.log( "success" );
-        
-        feed_contacts(cv.contacts);
+
+    $.getJSON("/data/cv-contacts-title.json", function(cv) {
         $("#titleCV").text(cv.title);
+        feed_contacts(cv.contacts);
+    });
+
+    $.getJSON("/data/cv-technicals.json", function(cv) {
         feed_technicals(cv.technicals);
-        feed_professionnal_history(cv.professionnal_stories);
+    });
+
+    $.getJSON("/data/cv-professionnal_history.json", function(cv) {
+        feed_professionnal_history(cv.professionnal_history);
+    });
+
+    $.getJSON("/data/cv-trainings.json", function(cv) {
         feed_trainings(cv.training);
+    });
+
+    $.getJSON("/data/cv-languages.json", function(cv) {
         feed_languages(cv.languages);
+    });
+
+    $.getJSON("/data/cv-interests.json", function(cv) {
         feed_interests(cv.interests);
-        
-    }).done(function() {
-        console.log( "second success" );
-    })
-    .fail(function() {
-        console.log( "error" );
-    })
-    .always(function() {
-        console.log( "complete" );
     });
 });
 
