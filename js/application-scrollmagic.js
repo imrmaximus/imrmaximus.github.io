@@ -8,8 +8,8 @@ $(document).ready(function() {
     var controller = new ScrollMagic();
 
 	// build scene
-    scene = new ScrollScene({triggerElement: "#marker-debut", duration: windowHeight*6})
-        .setPin("#main")
+    var scene = new ScrollScene({triggerElement: "#marker-debut", duration: windowHeight*6})
+        .setPin("#main-scroll")
         .addTo(controller);
 
     var tween = new TimelineMax()
@@ -39,7 +39,7 @@ $(document).ready(function() {
 
     tween = new TimelineMax()
         .add(TweenMax.to("#photo-profil", 5, {top: -150}))
-        .add(TweenMax.to("#photo-profil", 5, {left: '150%'}))
+        .add(TweenMax.to("#photo-profil", 5, {left: '120%'}))
         .add(TweenMax.fromTo("#technicals", 5, {left: -500, opacity: 0}, {left: -60, opacity: 1}));
 
     scene = new ScrollScene({triggerElement: "#marker-technicals", duration: 500})
@@ -48,7 +48,7 @@ $(document).ready(function() {
 
     tween = new TimelineMax()
         .add(TweenMax.to("#technicals", 5, {opacity: 0}))
-        .add(TweenMax.to("#photo-haunted-mansion", 5, {left: -1100}))
+        .add(TweenMax.to("#photo-haunted-mansion", 5, {left: '-100%'}))
         .add(TweenMax.to("#professional-history", 5, {css:{zIndex: 53}}));
 
     scene = new ScrollScene({triggerElement: "#marker-history", duration: 500})
@@ -57,7 +57,7 @@ $(document).ready(function() {
 
     tween = new TimelineMax()
         .add(TweenMax.to("#photo-profil", 5, {top: 0}))
-        .add(TweenMax.to("#title-CV", 5, {left: 300}));
+        .add(TweenMax.to("#title-CV", 5, {left: '30%'}));
 
     scene = new ScrollScene({triggerElement: "#marker-history", duration: 300})
         .setTween(tween)
@@ -88,7 +88,7 @@ $(document).ready(function() {
 
     tween = new TimelineMax()
         .add(TweenMax.to("#photo-moi", 5, {opacity: 1}))
-        .add(TweenMax.to("#photo-profil", 5, {left: 300, top: 100}))
+        .add(TweenMax.to("#photo-profil", 5, {left: '100%', top: '40%'}))
         .add(TweenMax.to("#title-CV", 5, {left: 250, top: 180}))
         .add(TweenMax.to("#its-me", 5, {opacity: 1}));
 

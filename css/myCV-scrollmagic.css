@@ -91,28 +91,32 @@ h3 {
     margin-left: -8px;
 }
 
-#main {
+#main-scroll {
     top: 5vh;
     max-width: 1150px;
     width: 80%;
     max-height: 700px;
     height: 80%;
     margin: 0px auto;
-    position: relative;
+    display: block;
 }
 
-#backgrounds {
+#main {
     position: absolute;
     top: 0px;
     left: 0px;
     overflow: hidden;
     width: 100%;
-    height: 100%;
-    max-height: 650px;
     z-index: 1000;
 }
 
-#backgrounds .background-photo {
+#main:after {
+    padding-top: 61.74%;
+    display: block;
+    content: '';
+}
+
+#main .background-photo {
     height: 100%;
     position: absolute;
     top: 0px;
@@ -147,7 +151,7 @@ h3 {
 #pres-contact {
     position: absolute;
     top: 30vh;
-    left: 400px;
+    left: 35vw;
     margin: 0 auto;
     width: 225px;
     height: 225px;
@@ -198,7 +202,7 @@ h3 {
 #technicals {
     z-index: 101;
     position: absolute;
-    top: 350px;
+    bottom: 5%;
     width: 400px;
     padding-bottom: 13px;
 }
@@ -209,7 +213,7 @@ h3 {
     left: -50px;
     top: 0px;
     width: 490px;
-    height: 610px;
+    height: 90%;
     padding-bottom: 13px;
     overflow-y: auto;
     overflow-x: hidden;
@@ -231,7 +235,7 @@ h3 {
     top: 150px;
     width: 300px;
     padding-bottom: 13px;
-    left: 580px;
+    right: 2%;
     opacity: 0;
 }
 
@@ -241,7 +245,7 @@ h3 {
     top: 350px;
     width: 450px;
     padding-bottom: 13px;
-    left: 430px;
+    right: 2%;
     opacity: 0;
 }
 
