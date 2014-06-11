@@ -8,8 +8,7 @@ $(document).ready(function($) {
 
     var scene = new ScrollScene({triggerElement: "#marker-debut", duration: windowHeight*6})
         .setPin("#main-scroll")
-        .addTo(controller)
-        .addIndicators();
+        .addTo(controller);
 
     // 1st "page"
     var tween = new TimelineMax()
@@ -22,24 +21,21 @@ $(document).ready(function($) {
 
     scene = new ScrollScene({triggerElement: "#marker-debut", duration: 500})
         .setTween(tween)
-        .addTo(controller)
-        .addIndicators();
+        .addTo(controller);
 
     tween = new TimelineMax()
         .add(TweenMax.to("#contacts", 5, {left: -500, opacity: 0}));
 
     scene = new ScrollScene({triggerElement: "#marker-contact-away", duration: 300})
         .setTween(tween)
-        .addTo(controller)
-        .addIndicators();
+        .addTo(controller);
 
     // 2nd "page"
     tween = TweenMax.to("#photo-arbre-ciel", 5, {top: -1000});
 
     scene = new ScrollScene({triggerElement: "#marker-technicals", duration: 500})
         .setTween(tween)
-        .addTo(controller)
-        .addIndicators();
+        .addTo(controller);
 
     tween = new TimelineMax()
         .add(TweenMax.to("#titleCV", 5, {left: '2vw'}))
@@ -49,8 +45,7 @@ $(document).ready(function($) {
 
     scene = new ScrollScene({triggerElement: "#marker-technicals", duration: 500})
         .setTween(tween)
-        .addTo(controller)
-        .addIndicators();
+        .addTo(controller);
 
     // 3rd "page"
     tween = new TimelineMax()
@@ -60,8 +55,7 @@ $(document).ready(function($) {
 
     scene = new ScrollScene({triggerElement: "#marker-history", duration: 500})
         .setTween(tween)
-        .addTo(controller)
-        .addIndicators();
+        .addTo(controller);
 
     tween = new TimelineMax()
         .add(TweenMax.to("#photo-profil", 5, {top: 0}))
@@ -69,8 +63,7 @@ $(document).ready(function($) {
 
     scene = new ScrollScene({triggerElement: "#marker-history", duration: 300})
         .setTween(tween)
-        .addTo(controller)
-        .addIndicators();
+        .addTo(controller);
 
     // 4th "page"
     tween = new TimelineMax()
@@ -82,8 +75,7 @@ $(document).ready(function($) {
 
     scene = new ScrollScene({triggerElement: "#marker-training", duration: 300})
         .setTween(tween)
-        .addTo(controller)
-        .addIndicators();
+        .addTo(controller);
 
     // 5th "page"
     tween = new TimelineMax()
@@ -96,8 +88,7 @@ $(document).ready(function($) {
 
     scene = new ScrollScene({triggerElement: "#marker-show-various", duration: 300})
         .setTween(tween)
-        .addTo(controller)
-        .addIndicators();
+        .addTo(controller);
 
     // last "page"
     tween = new TimelineMax()
@@ -108,23 +99,20 @@ $(document).ready(function($) {
 
     scene = new ScrollScene({triggerElement: "#marker-et-voila", duration: windowHeight})
         .setTween(tween)
-        .addTo(controller)
-        .addIndicators();
+        .addTo(controller);
 
     tween = new TimelineMax()
         .add(TweenMax.to("#langages", 5, {opacity: 0}));
 
     scene = new ScrollScene({triggerElement: "#marker-et-voila", duration: 300})
         .setTween(tween)
-        .addTo(controller)
-        .addIndicators();
+        .addTo(controller);
 
     tween = new TimelineMax()
         .add(TweenMax.to("#interests", 5, {opacity: 0}));
 
     scene = new ScrollScene({triggerElement: "#marker-et-voila", duration: 300})
         .setTween(tween)
-        .addTo(controller)
-        .addIndicators();
+        .addTo(controller);
 
 });
