@@ -17,8 +17,7 @@
         <script type="text/javascript" src="js/application-angularjs.js"></script>
     </head>
     <body ng-app="myCv">
-
-        <div id="wrapper">
+        <section id="wrapper">
             <div id="marker-debut" class="marker"></div>
             <div id="marker-contact-away" class="marker"></div>
             <div id="marker-technicals" class="marker"></div>
@@ -27,7 +26,7 @@
             <div id="marker-show-various" class="marker"></div>
             <div id="marker-et-voila" class="marker"></div>
 
-            <div id="main-scroll" class="pin">
+            <div id="main-scroll">
 
                 <div id="main" class="round-transparent">
                     <img src="img/IMG_1545_Fotor_3_Fotor_Fotor.jpg" class="background-photo" id="photo-arbre-ciel">
@@ -52,9 +51,7 @@
                         </div>
                     </div>
 
-                    <div id="title-CV" ng-controller="ContactCtrl">
-                        <h1 id="titleCV" class="col-sm-offset-3 col-sm-6">{{title}}</h1>
-                    </div>
+                    <h1 id="titleCV" class="col-sm-offset-3 col-sm-6" ng-controller="ContactCtrl">{{title}}</h1>
 
                     <div id="technicals" class="col-sm-offset-1 col-sm-10 round-transparent white-border trans-grey-background" ng-controller="TechnicalsCtrl">
                         <div class="row">
@@ -193,7 +190,7 @@
                     <h1 id="its-me" class="col-sm-offset-3 col-sm-6 row">Ca, c'est moi...</h1>
                 </div>
             </div>
-        </div>
+        </section>
 
         <script type="text/javascript" src="js/angularjs/contacts.js"></script>
         <script type="text/javascript" src="js/angularjs/technicals.js"></script>
