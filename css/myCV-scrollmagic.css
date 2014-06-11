@@ -93,6 +93,7 @@ h3 {
     max-height: 700px;
     height: 80%;
     margin: 0 auto;
+    top: 5vh;
 }
 
 #main {

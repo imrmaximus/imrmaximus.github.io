@@ -6,6 +6,22 @@ h3 {
     text-decoration:underline;
 }
 
+#menu {
+    position: fixed;
+    background-color: rgba(230, 230, 230, 0.5);
+    border: 1px solid #C8C8C8;
+    text-align: center;
+    top: 0px;
+    left: 0px;
+    width: 105%;
+    z-index: 1;
+    margin: -1px -3px 0px;
+}
+
+.debut-cv {
+    margin-top: 25px;
+}
+
 #name, #phone, #email {
     font-weight: bold;
 }
